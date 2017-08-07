@@ -13,6 +13,7 @@ defmodule Servy.Handler do
   end
   
   def parse(request) do
+    first_line = request |> String.split("\n") |> List.first
     conv = %{ method: "GET", path: "/wildthings", resp_body: ""}
   end
   
